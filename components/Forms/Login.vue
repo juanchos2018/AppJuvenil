@@ -1,18 +1,17 @@
 <template>
   <AuthFrame
-    title="Bienvenido"
-    subtitle="Inicio de sesion"
+    title="titulo"
+    subtitle="subtitle"
   >
     <div>
       <div class="head">
         <title-main
-          head="Inicio de Sesion"
+          head="Inicio"
           align="left"
           color="secondary"
         />
-     
-      </div>   
-     
+      
+      </div>       
       <v-form
         ref="form"
         v-model="valid"
@@ -21,7 +20,7 @@
           <v-col cols="12" sm="12" class="px-3">
             <v-text-field
               v-model="email"
-              label="Correo"
+              label="correo"
               :rules="emailRules"
               color="secondary"
               class="input"
@@ -33,7 +32,7 @@
           <v-col cols="12" sm="12" class="px-3">
             <v-text-field
               v-model="password"
-              label="Clave"
+              label="clave"
               :rules="requiredRules"
               color="secondary"
               type="password"
@@ -48,7 +47,7 @@
           <div class="form-control-label">
             <v-checkbox
               v-model="checkbox"
-              label="recordar"
+              label="checj"
               color="secondary"
             />
           </div>
@@ -58,7 +57,7 @@
             text
             href="#"
           >
-          Olivde mi contraseña
+           recordar
           </v-btn>
         </div>
         <div class="btn-area mt-10">
@@ -68,7 +67,7 @@
             color="secondary"
             @click="handleSubmit"
           >
-            Ingresar
+          Ingresar
           </v-btn>
         </div>
       </v-form>
@@ -83,12 +82,10 @@
 <script>
 import routerLink from '~/static/text/link'
 import Title from '../Title/Title'
-
 import AuthFrame from './AuthFrame'
 
 export default {
-  components: {
-  
+  components: {    
     'title-main': Title,
     AuthFrame
   },

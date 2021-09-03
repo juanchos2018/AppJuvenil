@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="main-wrap">
+  <div>    
+ 
+ <div class="main-wrap">
       <main-header />
       <div class="container-wrap">
         <square-parallax />
@@ -114,20 +115,20 @@ import Testimonials from '~/components/Testimonials'
 import GaleriaFotos from '~/components/GaleriaFotos'
 import CallAction from '~/components/CallAction'
 import MapAddress from '~/components/MapAddress'
-import Footer from '~/components/Footer'
+ import Footer from '~/components/Footer'
 import Hidden from '~/components/Hidden'
 import PageNav from '~/components/PageNav'
 import Blog from '~/components/Blog'
 import DotsParallax from '~/components/Parallax/Dots'
-import brand from '~/static/text/brand'
-//import Galeria from '../components/Galeria/Galeria.vue'
+ import brand from '~/static/text/brand'
+
 
 export default {
   components: {
     'main-header': Header,
     SquareParallax,
     DotsParallax,
-    VideoBanner,
+   VideoBanner,
     Sobre,
     Conocenos,
     Experiencias,
@@ -137,10 +138,10 @@ export default {
     MapAddress,
     PageNav,
     Hidden,
-    Blog,
-  
+    Blog,  
+  //  Galeria,
     'main-footer': Footer,
-    //Galeria
+ 
   },
   computed: {
     isTablet() {

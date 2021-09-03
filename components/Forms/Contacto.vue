@@ -127,7 +127,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import './form-style.scss';
+@import './form-stylecontac.scss';
 @import '../Title/title-style.scss';
 </style>
 

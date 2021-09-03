@@ -105,19 +105,8 @@
                 </li>
               </scrollactive>
             </div>
-            <!-- <setting-menu :invert="invert" /> -->
-          </nav>
-          <nav class="nav-menu nav-auth">
-            <hidden point="xsDown">
-              <div class="deco" />             
-              <v-btn  :href="link.agency.login" class="button white">
-                   Login
-              </v-btn>
-            </hidden>
             <setting-menu :invert="invert" />
           </nav>
-
-
         </div>
       </v-container>
     </v-app-bar>

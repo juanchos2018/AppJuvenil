@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div>    
     <login-form />
   </div>
 </template>
@@ -10,11 +10,11 @@ import LoginForm from '~/components/Forms/Login'
 
 export default {
   components: {
-    LoginForm
+  LoginForm
   },
   head() {
     return {
-      title: brand.agency.name + ' - Login'
+     title: brand.agency.name + ' - Login'
     }
   }
 }

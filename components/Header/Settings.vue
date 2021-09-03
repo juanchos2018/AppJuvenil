@@ -50,9 +50,33 @@
         </v-list-item>
       </v-list>
       <v-divider />
-      <v-list class="lang-menu">
-        <v-subheader>{{ $t('agencyLanding.header_language') }}</v-subheader>
-        <v-list-item
+      <v-list class="lang-menu">      
+      
+        <v-list-item>
+          <v-list-item-avatar>
+            <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
+          </v-list-item-avatar>
+        </v-list-item>
+
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title class="text-h6">
+              John Leider
+            </v-list-item-title>
+            <v-list-item-subtitle>john@vuetifyjs.com</v-list-item-subtitle>
+          </v-list-item-content>
+
+          <v-list-item-action>
+            <v-icon>mdi-menu-down</v-icon>
+          </v-list-item-action>
+        </v-list-item>
+  <v-list-item>
+             <v-btn :href="link.agency.login" class="button primary">
+              Login
+          </v-btn>
+        </v-list-item>
+      
+        <!-- <v-list-item
           v-for="locale in $i18n.locales"
           :key="locale.code"
           class="lang-list"
@@ -74,8 +98,10 @@
               mdi-check
             </v-icon>
           </v-list-item-action>
-        </v-list-item>
+        </v-list-item> -->
+
       </v-list>
+
     </div>
   </v-menu>
 </template>
@@ -85,6 +111,8 @@
 </style>
 
 <script>
+
+import link from '~/static/text/link'
 import { mapGetters, mapState } from 'vuex'
 
 let darkMode = false
@@ -100,6 +128,7 @@ export default {
     }
   },
   data: () => ({
+      link: link,
     dark: darkMode === 'true',
     rtl: false,
     open: false,

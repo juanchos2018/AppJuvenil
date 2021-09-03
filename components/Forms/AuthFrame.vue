@@ -4,7 +4,7 @@
       <hidden point="mdUp">
         <div class="logo logo-header">
           <a :href="routerLink.agency.home">
-            <img src="/images/redjuvenilsvg.svg" alt="logo" />
+            <img src="/images/redjuveninpng.png" alt="logo" />
           </a>
         </div>
       </hidden>
@@ -29,16 +29,16 @@
                       <div class="secondary-light"></div>
                     </div>
                     <div class="logo">
-                      <img src="/images/redjuvenilsvg.svg" alt="logo" />
+                      <img src="/images/redjuveninpng.png" alt="logo" />
                       <p class="use-text-subtitle2">
-                        {{ brand.agency.projectName }}
+                        App juvenil
                       </p>
                     </div>
                     <h4 class="use-text-title2 pb-2">
-                      {{ title }}
+                   Inicio 
                     </h4>
                     <h6 class="use-text-paragraph">
-                      {{ subtitle }}
+                   Subtitulo
                     </h6>
                   </div>
                 </hidden>
@@ -57,7 +57,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import './form-style.scss';
+@import './form-stylelogin.scss';
 </style>
 
 <script>
